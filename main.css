@@ -1,0 +1,33 @@
+.jumbotron {
+    min-height: 100vh;
+    background: rgba(204, 72, 19, 0.959);
+}
+
+hr {
+    width: 100%;
+    border: 1px solid white;
+}
+
+#profile {
+    width: 150px;
+}
+
+section {
+    padding-top: 4rem;
+}
+
+#section-home {
+    margin: 0px;
+    padding-top: 0px;
+}
+
+.carousel-item {
+    height: 70vh;
+}
+
+.carousel-caption {
+    background: rgba(0,0,0,.8);
+    right: 0px;
+    left: 0px;
+}
+
