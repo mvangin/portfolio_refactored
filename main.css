@@ -1,3 +1,22 @@
+
+#fade-in {
+    animation: fadeIn ease 5s;
+    -webkit-animation: fadeIn ease 5s;
+    -moz-animation: fadeIn ease 5s;
+
+}
+
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+
 .jumbotron {
     min-height: 100vh;
     background: rgba(204, 72, 19, 0.959);
@@ -21,13 +40,34 @@ section {
     padding-top: 0px;
 }
 
-.carousel-item {
-    height: 70vh;
+
+
+.imageContainer {
+    border: 1px solid black;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;   
 }
+
 
 .carousel-caption {
     background: rgba(0,0,0,.8);
     right: 0px;
     left: 0px;
+}
+
+.project-title{
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Playfair Display', serif;
+}
+
+
+
+.carousel-caption {
+    position: relative;
+    left: 0;
+    top: 0;
 }
 

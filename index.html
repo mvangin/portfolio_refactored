@@ -12,6 +12,9 @@
 
     <link rel="stylesheet" href="main.css" />
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
     <title>Marcus van Ginkel</title>
 </head>
 
@@ -19,7 +22,7 @@
 
 <body class="bg-secondary" data-spy="scroll" data-target="#navscroll-spy" data-offset="0">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar  navbar-expand-lg navbar-dark fixed-top " style="background: rgba(204, 72, 19, 0.959)" ;>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -34,10 +37,10 @@
                     <a class="nav-link" href="#section-about"> About </a>
                 </li>
                 <li class="nav-item px-3">
-                    <a class="nav-link" href="#section-skills"> Skills </a>
+                    <a class="nav-link" href="#section-projects"> Projects </a>
                 </li>
                 <li class="nav-item px-3">
-                    <a class="nav-link" href="#section-projects"> Projects </a>
+                    <a class="nav-link" href="#section-skills"> Skills </a>
                 </li>
             </ul>
         </div>
@@ -46,8 +49,10 @@
     <section id="section-home">
         <div class="jumbotron text-light d-flex flex-column justify-content-center align-items-center"
             id="section-home">
-            <h1 class="text-center">My Name is Marcus van Ginkel. <br> </h1>
-            <h1> A Web Developer </h1>
+            <h1 class="text-center">My Name is Marcus van Ginkel. </h1>
+            <div id="fade-in" style="width: 325px">
+                <h1> A Web Developer </h1>
+            </div>
             <hr class="my-3">
             <p class="text-center"> <a href="#section-about" class="text-light h4"> <u> Learn more </u> </a> </p>
         </div>
@@ -70,24 +75,241 @@
                         <div class="about-cont lead text-left">
 
                             <p>
-                                I started my Web Development career by completing the open-source full-stack bootcamp
-                                called <a href="https://www.theodinproject.com/" class="text-light"> <u> the Odin Project.</u></a>
+                                After obtaining a degree in Psychology from Carleton College in 2017 and working in
+                                research for 2 years, I decided to change career paths.
+                                I started my Web Development career by completing the open-source fullstack bootcamp
+                                called <a href="https://www.theodinproject.com/" class="text-light"> <u> the Odin
+                                        Project.</u></a>
                             </p>
 
                             <p>
                                 The project-based curriculum starts with the basics like setting up a local
-                                development environment, and then progressively increases project complexity and introduces relevant
-                                theory.
+                                development environment, and then progressively increases project complexity and
+                                introduces relevant theory, capstoning with an independently created fullstack MERN
+                                application.
                             </p>
 
                             <p>
-                                Through the curriculum I extensively covered HTML, CSS, Javascript, and React.
+                                I extensively covered HTML, CSS, Javascript, React, NodeJS/Express, and Bootstrap.
                             </p>
                         </div>
                     </div>
 
                 </div>
             </div>
+        </section>
+
+
+        <section id="section-projects">
+
+            <div class="text-center mb-3">
+                <h1 class="h1 text-light"> <u> Personal Projects</u> </h1>
+            </div>
+
+            <div id="carousel-caption" class="carousel slide" data-ride="carousel" data-interval="false">
+                <ol class="carousel-indicators d-none d-md-flex">
+                    <li data-target="#carousel-caption" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-caption" data-slide-to="1"></li>
+                    <li data-target="#carousel-caption" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-12 col-md-6 d-flex align-items-center">
+                                <img src="images/snofflesteinBlogs.png" class="w-100" style="min-height: 300px"
+                                    alt="...">
+                            </div>
+                            <div class="col-12 col-md-5 d-flex align-items-center p-1">
+                                <div class="text-white">
+                                    <div class="text-center project-title">
+                                        <b> SnuffleStein Blogs </b>
+                                    </div>
+                                    <ul>
+                                        <li class="pt-2">
+                                            Backend created using MongoDB, Express, and NodeJS. Implemented API
+                                            authentication using JSON Web Tokens and Passport.js.
+                                        </li>
+                                        <li class="pt-2">
+                                            Created React.js front end for Administrators. Administrators can login to
+                                            create,read, update, and delete, including publishing and unpublishing blogs as
+                                            needed.
+                                        </li>
+                                        <li class="pt-2">
+                                            Created React.js front end for customers. Customers can signup/login, view
+                                            and add comments to published posts, and contact
+                                            blog administrators (implemented using Nodemailer).
+                                        </li>
+                                        <li class="pt-2">
+                                            Hosted and viewable on <a> Heroku  </a> (note: Heroku free version, initial
+                                            startup slow). Source code <a> here </a>
+                                        </li>
+
+
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Fullstack MERN Blog App</h5>
+                            <p> </p>
+
+                        </div>
+                    </div>
+
+
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-12 col-md-6 d-flex align-items-center">
+                                <img src="images/CoffeeInventoryApp.png" class="w-100" style="min-height: 300px"
+                                    alt="...">
+                            </div>
+                            <div class="col-12 col-md-5 d-flex align-items-center p-1">
+                                <div class="text-white">
+                                    <div class="text-center project-title">
+                                        <b> Snuffels Coffee Inventory </b>
+                                    </div>
+                                    <ul>
+                                        <li class="pt-2">
+                                            Create, read, update, and delete coffee and associated brand inventory.
+                                        </li>   
+                                        <li class="pt-2">
+                                            Created using MongoDB, Express, NodeJS, Pug, and Bootstrap.
+                                        </li>
+                                     <li class="pt-2">
+                                            Implemented Mongoose queries to sort coffee by brand and roast level
+                                        </li>
+                                        <li class="pt-2">
+                                            Input sanitization, validation, and error handling 
+                                        </li>
+                                        <li class="pt-2">
+                                            Hosted and viewable on <a> Heroku  </a> (note: Heroku free version, initial
+                                            startup slow). Source code <a> here </a>
+                                        </li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Local Coffee Inventory App</h5>
+                            <p> </p>
+
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-12 col-md-6 d-flex align-items-center">
+                                <img src="images/speed-typing-test.png" class="w-100" style="min-height: 300px"
+                                    alt="...">
+                            </div>
+                            <div class="col-12 col-md-5 d-flex align-items-center p-1">
+                                <div class="text-white">
+                                    <div class="text-center project-title">
+                                        <b> Speed Typing Game </b>
+                                    </div>
+                                    <ul>
+                                        <li class="pt-2">
+                                            Created speed typing game using HTML, CSS, Javascript, and React.
+                                        </li>
+                                        <li class="pt-2">
+                                            Includes adjustable countdown timer, realtime words per minute, and a final accuracy score.
+                                        </li>
+                                        <li class="pt-2">
+                                            Content refresh without reloading
+                                        </li>
+                                        <li class="pt-2">
+                                            Hosted and viewable on <a> Github pages  </a>.  Source code <a> here </a>
+                                        </li>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Speed Typing Game</h5>
+                            <p> </p>
+
+                        </div>
+                    </div>
+
+
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-12 col-md-6 d-flex align-items-center">
+                                <img src="images/weatherApp.png" class="w-100" alt="..." style="min-height: 300px">
+                            </div>
+                            <div class="col-12 col-md-5 d-flex align-items-center p-1">
+                                <div class="text-white">
+                                    <div class="text-center project-title">
+                                        <b> Weather App </b>
+                                    </div>
+                                    <ul>
+                                        <li class="pt-2">
+                                            Used OpenWeatherMap API and Fetch to get new data without refresh
+                                        </li>
+                                        <li class="pt-2">
+                                            Simple front-end UI created using React
+                                        </li>
+                                        <li class="pt-2">
+                                            Update page content without reload, error handling
+                                        </li>
+                                        <li class="pt-2">
+                                            Hosted and viewable on <a> Github pages  </a>.  Source code <a> here </a>
+                                        </li>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Weather App</h5>
+                            <p> </p>
+
+                        </div>
+                    </div>
+
+
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-12 col-md-6 d-flex align-items-center">
+                                <img src="images/ResponsiveDesignClone.png" class="w-100" alt="..."
+                                    style="min-height: 300px">
+                            </div>
+                            <div class="col-12 col-md-5 d-flex align-items-center p-1">
+                                <div class="text-white">
+                                    <div class="text-center project-title">
+                                        <b> TNW Clone </b>
+                                    </div>
+                                    <ul>
+                                        <li class="pt-1">
+                                            Created a clone of the thenextweb.com to cement responsive design
+                                            principles.
+                                        </li>
+                                        <li class="pt-1">
+                                            Implemented CSS flexbox, Grid, and @media queries to created a responsive
+                                            website
+                                        </li>
+                                        <li class="pt-2">
+                                            Hosted and viewable on <a> Github pages  </a>.  Source code <a> here </a>
+                                        </li>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Responsive Design Clone</h5>
+                            <p> </p>
+                        </div>
+                    </div>
+
+                    <a class="carousel-control-prev" href="#carousel-caption" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next " href="#carousel-caption" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
         </section>
 
 
@@ -120,10 +342,10 @@
                         </div>
                         <ul class="list-group">
                             <li class="list-group-item">
-                                NodeJS / Express
+                                NodeJS + Express
                             </li>
                             <li class="list-group-item">
-                                Cloud Firestore
+                                Mongoose + MongoDB
                             </li>
                         </ul>
                     </div>
@@ -135,64 +357,14 @@
                             Additional Skills
                         </div>
                         <ul class="list-group">
-                            <li class="list-group-item">Version control with Git </li>
-                            <li class="list-group-item">Cloud-based hosting using Github </li>
+                            <li class="list-group-item">Version control with git + github</li>
+                            <li class="list-group-item">Cloud-based hosting using Github Pages/Heroku </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
-
-
-
-        <section id="section-projects">
-
-            <div class="text-center mb-5">
-                <h1 class="h1 text-light"> <u> Personal Projects</u> </h1>
-            </div>
-
-            <div id="carousel-caption" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carousel-caption" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-caption" data-slide-to="1"></li>
-                    <li data-target="#carousel-caption" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="images/squirrel1.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Squirrel 1</h5>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/squirrel22.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Squirrel 2</h5>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/squirrel3.jpg" class="d-block w-100 h-300" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Squirrel 3</h5>
-                        </div>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carousel-caption" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carousel-caption" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </section>
     </div>
-
-
-
-
-
 
 
 
