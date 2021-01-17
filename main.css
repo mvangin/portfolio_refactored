@@ -1,3 +1,10 @@
+.nav-link:hover {
+    border-bottom: 2px white solid;
+}
+
+.nav-link {
+    font-size: 1.3rem;
+}
 
 #fade-in {
     animation: fadeIn ease 5s;
@@ -25,6 +32,10 @@
 hr {
     width: 100%;
     border: 1px solid white;
+}
+
+.learn-more:hover {
+    transform: scale(.96)
 }
 
 #profile {
