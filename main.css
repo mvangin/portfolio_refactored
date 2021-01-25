@@ -31,7 +31,11 @@ body {
 /* navbar */ 
 
 .navbarTop {
-    background: rgba(204, 72, 19, 0.959);
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+
 }
 .navbarTop ul {
     display: flex;
@@ -71,7 +75,7 @@ section > div{
 
 #section-home .homeContainer {
     text-align: center; 
-    padding-top: 80px;
+    padding-top: 120px;
     color: white;
 }
 
@@ -215,7 +219,6 @@ hr {
 }
 
 #section-skills  .skillsCatContainer {
-
     width: 33%;
     background-color: white;
     color: #333;
@@ -223,6 +226,7 @@ hr {
     box-shadow: 0 3px 10px rgba(0,0,0,0.5);
     margin: 20px;
 }
+
 
 #section-skills .skillsCatContainer .skillsTitle{   
         background:#ffc107;
