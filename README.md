@@ -1,1 +1,1 @@
-Created responsive portfolio website using Bootstrap framework!
+Created portolio site hosted on http://marcusvanginkel.com
