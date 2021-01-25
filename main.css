@@ -161,6 +161,17 @@ hr {
     color: black;
 }
 
+#section-projects .carousel-item .row{
+    min-height: 348px;
+}
+
+
+#section-projects .carousel-item .row img{
+    max-width: 100%;
+}
+
+
+
 .imageContainer {
     border: 1px solid black;
     width: 80%;
