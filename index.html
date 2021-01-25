@@ -16,94 +16,84 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
 
     <title>Marcus van Ginkel</title>
+
 </head>
 
 
 
-<body class="bg-secondary" data-spy="scroll" data-target="#navscroll-spy" data-offset="0">
-
-    <nav class="navbar  navbar-expand-lg navbar-dark fixed-top " style="background: rgba(204, 72, 19, 0.959)" ;>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto ml-auto" id="navscroll-spy">
-                <li class="nav-item  px-3">
-                    <a class="nav-link" href="#section-home"> Home </a>
-                </li>
-                <li class="nav-item px-3">
-                    <a class="nav-link" href="#section-about"> About </a>
-                </li>
-                <li class="nav-item px-3">
-                    <a class="nav-link" href="#section-projects"> Projects </a>
-                </li>
-                <li class="nav-item px-3">
-                    <a class="nav-link" href="#section-skills"> Skills </a>
-                </li>
-            </ul>
-        </div>
+<body>
+    <nav class="navbarTop">
+        <ul class="navbarList" id="navscroll-spy">
+            <li>
+                <a href="#section-home"> Home </a>
+            </li>
+            <li>
+                <a href="#section-about"> About </a>
+            </li>
+            <li>
+                <a href="#section-projects"> Projects </a>
+            </li>
+            <li>
+                <a href="#section-skills"> Skills </a>
+            </li>
+        </ul>
     </nav>
 
+
     <section id="section-home">
-        <div class="jumbotron text-light d-flex flex-column justify-content-center align-items-center"
-            id="section-home">
-            <h1 class="text-center">My Name is Marcus van Ginkel. </h1>
-            <div id="fade-in" style="width: 325px">
-                <h1> A Web Developer </h1>
+        <div class="homeContainer">
+            <div class="homeMain">
+                <h1> My Name is Marcus van Ginkel. </h1>
+                <h2> A Web Developer </h2>
             </div>
-            <hr class="my-3">
-            <p class="text-center learn-more"> <a href="#section-about" class="text-light h4"> <u> Learn more </u> </a> </p>
+            <hr>
+            <div class="homeSecondary">
+                <a href="#section-about">
+                    <h2> Learn more </h2>
+                </a>
+            </div>
         </div>
     </section>
 
-    <div class="container">
-        <section id="section-about">
-            <div class="jumbotron bg-secondary text-light xt-center text-center">
+    <section id="section-about">
+        <div class="aboutContainer">
 
-                <div class="text-center mb-5">
-                    <h1 class="h1 text-light"> <u> About Me </u> </h1>
+            <div class="aboutTitle">
+                <div>
+                    <h1> About Me </u> </h1>
                 </div>
-
-                <div class="row mt-6">
-                    <div class="mb-5 mb-md-0 col-md-6 d-flex justify-content-center align-items-center">
-                        <img src="images/profile.jpeg" class="w-50" id="profile">
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="about-cont lead text-left">
-
-                            <p>
-                                After obtaining a degree in Psychology from Carleton College in 2017 and working as a
-                                clinical
-                                research assistant for 2 years, I decided to pursue coding fulltime.
-                                I started my Web Development career by completing the open-source fullstack bootcamp
-                                called <a href="https://www.theodinproject.com/" class="text-light"> <u> the Odin
-                                        Project.</u></a>
-                            </p>
-
-                            <p>
-                                The project-based curriculum progressively increases project complexity and
-                                introduces relevant theory, capstoning with an independently created fullstack MERN
-                                application.
-                            </p>
-
-                            <p>
-                                I extensively covered HTML, CSS, Javascript, React, Node.js, Mongoose, MongoDB and
-                                Bootstrap.
-                            </p>
-                        </div>
-                    </div>
-
+                <div>
+                    <img src="images/profile.jpeg" id="profile">
                 </div>
             </div>
-        </section>
+            <div class="aboutSummary">
+                <p>
+                    After obtaining a degree in Psychology from Carleton College in 2017 and working as a
+                    clinical research assistant for 2 years, I decided to pursue coding fulltime.
+                    I started my Web Development career by completing the open-source fullstack bootcamp
+                    called <a href="https://www.theodinproject.com/"> <u> the Odin
+                            Project.</u></a>
+                </p>
+
+                <p>
+                    The project-based curriculum progressively increases project complexity and
+                    introduces relevant theory, capstoning with an independently created fullstack MERN
+                    application.
+                </p>
+
+                <p>
+                    I extensively covered HTML, CSS, Javascript, React, Node.js, Mongoose, MongoDB and
+                    Bootstrap.
+                </p>
+
+            </div>
+        </div>
+    </section>
 
 
-        <section id="section-projects">
-
-            <div class="text-center mb-3">
+    <section id="section-projects" class="bg-dark">
+        <div class="">
+            <div class="text-center mb-5">
                 <h1 class="h1 text-light"> <u> Personal Projects</u> </h1>
             </div>
 
@@ -112,17 +102,19 @@
                     <li data-target="#carousel-caption" data-slide-to="0" class="active"></li>
                     <li data-target="#carousel-caption" data-slide-to="1"></li>
                     <li data-target="#carousel-caption" data-slide-to="2"></li>
+                    <li data-target="#carousel-caption" data-slide-to="3"></li>
+                    <li data-target="#carousel-caption" data-slide-to="4"></li>
                 </ol>
-                <div class="carousel-inner">
+                <div class="carousel-inner text-dark">
                     <div class="carousel-item active">
                         <div class="row">
                             <div class="col-12 col-md-6 d-flex align-items-center">
                                 <img src="images/ConflictContinuum.png" class="w-100" style="min-height: 300px"
                                     alt="blog app">
                             </div>
-                            <div class="col-12 col-md-5 d-flex align-items-center p-1">
+                            <div class="col-12 col-md-5 d-flex align-items-center ">
                                 <div class="text-white">
-                                    <div class="text-center project-title">
+                                    <div class="text-center project-title  d-none d-md-block">
                                         <b> The Conflict Continuum </b>
                                     </div>
 
@@ -130,6 +122,7 @@
                                         <li class="pt-2">
                                             Fullstack blog application with responsive UI design using React, custom
                                             CSS, and Bootstrap
+                                            
                                         </li>
                                         <li class="pt-2">
                                             Blog data organized and stored on cloud database using Mongoose/MongoDB,
@@ -157,9 +150,21 @@
                             </div>
                         </div>
 
-                        <div class="carousel-caption d-none d-md-block">
+                        <div class="carousel-caption d-block">
                             <h5>Fullstack MERN Blog App</h5>
                             <p> </p>
+                            <div>
+                                <a class="carousel-control-prev" href="#carousel-caption" role="button"
+                                    data-slide="prev">
+                                    <span class="carousel-control-prev-icon p-3" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next " href="#carousel-caption" role="button"
+                                    data-slide="next">
+                                    <span class="carousel-control-next-icon p-3" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
 
                         </div>
                     </div>
@@ -171,9 +176,9 @@
                                 <img src="images/CoffeeInventoryApp.png" class="w-100" style="min-height: 300px"
                                     alt="inventory app">
                             </div>
-                            <div class="col-12 col-md-5 d-flex align-items-center p-1">
+                            <div class="col-12 col-md-5 d-flex align-items-center">
                                 <div class="text-white">
-                                    <div class="text-center project-title">
+                                    <div class="text-center project-title  d-none d-md-block">
                                         <b> CedarWing Coffee Inventory </b>
                                     </div>
                                     <ul>
@@ -202,9 +207,21 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-caption d-none d-md-block">
+                        <div class="carousel-caption d-block">
                             <h5>Local Coffee Inventory App</h5>
                             <p> </p>
+                            <div>
+                                <a class="carousel-control-prev" href="#carousel-caption" role="button"
+                                    data-slide="prev">
+                                    <span class="carousel-control-prev-icon p-3" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next " href="#carousel-caption" role="button"
+                                    data-slide="next">
+                                    <span class="carousel-control-next-icon p-3" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
 
                         </div>
                     </div>
@@ -215,9 +232,9 @@
                                 <img src="images/speed-typing-test.png" class="w-100" style="min-height: 300px"
                                     alt="typing app">
                             </div>
-                            <div class="col-12 col-md-5 d-flex align-items-center p-1">
+                            <div class="col-12 col-md-5 d-flex align-items-center ">
                                 <div class="text-white">
-                                    <div class="text-center project-title">
+                                    <div class="text-center project-title  d-none d-md-block">
                                         <b> Speed Typing Game </b>
                                     </div>
                                     <ul>
@@ -247,10 +264,21 @@
                             </div>
                         </div>
 
-                        <div class="carousel-caption d-none d-md-block">
+                        <div class="carousel-caption d-block">
                             <h5>Speed Typing App</h5>
                             <p> </p>
-
+                            <div>
+                                <a class="carousel-control-prev" href="#carousel-caption" role="button"
+                                    data-slide="prev">
+                                    <span class="carousel-control-prev-icon p-3" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next " href="#carousel-caption" role="button"
+                                    data-slide="next">
+                                    <span class="carousel-control-next-icon p-3" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
 
@@ -260,9 +288,9 @@
                                 <img src="images/ResponsiveDesignClone.png" class="w-100" alt="TNW clone"
                                     style="min-height: 300px">
                             </div>
-                            <div class="col-12 col-md-5 d-flex align-items-center p-1">
+                            <div class="col-12 col-md-5 d-flex align-items-center">
                                 <div class="text-white">
-                                    <div class="text-center project-title">
+                                    <div class="text-center project-title  d-none d-md-block">
                                         <b> TNW Clone </b>
                                     </div>
                                     <ul>
@@ -295,9 +323,21 @@
                             </div>
                         </div>
 
-                        <div class="carousel-caption d-none d-md-block">
+                        <div class="carousel-caption d-block">
                             <h5>Responsive Design Clone</h5>
                             <p> </p>
+                            <div>
+                                <a class="carousel-control-prev" href="#carousel-caption" role="button"
+                                    data-slide="prev">
+                                    <span class="carousel-control-prev-icon p-3" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next " href="#carousel-caption" role="button"
+                                    data-slide="next">
+                                    <span class="carousel-control-next-icon p-3" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
 
@@ -305,11 +345,11 @@
                         <div class="row">
                             <div class="col-12 col-md-6 d-flex align-items-center">
                                 <img src="images/weatherApp.png" class="w-100" alt="weather app"
-                                    style="min-height: 250px">
+                                    style="max-height: 300px">
                             </div>
-                            <div class="col-12 col-md-5 d-flex align-items-center p-1">
+                            <div class="col-12 col-md-5 d-flex align-items-center">
                                 <div class="text-white">
-                                    <div class="text-center project-title">
+                                    <div class="text-center project-title d-none d-md-block">
                                         <b> Weather App </b>
                                     </div>
                                     <ul>
@@ -336,91 +376,95 @@
                             </div>
                         </div>
 
-                        <div class="carousel-caption d-none d-md-block">
+                        <div class="carousel-caption ">
                             <h5>Weather App</h5>
                             <p> </p>
-
+                            <div>
+                                <a class="carousel-control-prev" href="#carousel-caption" role="button"
+                                    data-slide="prev">
+                                    <span class="carousel-control-prev-icon p-3" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next " href="#carousel-caption" role="button"
+                                    data-slide="next">
+                                    <span class="carousel-control-next-icon p-3" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
 
-                    <a class="carousel-control-prev" href="#carousel-caption" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next " href="#carousel-caption" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-        </section>
-
-
-        <section id="section-skills" class="mb-5">
-
-            <div class="text-center mb-5">
-                <h1 class="h1 text-light"> <u> Skills</u> </h1>
-            </div>
-
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-4 mb-4">
-                    <div class="card text-dark cardBG">
-                        <div class="card-header text-center lead">
-                            Front-end
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item"> HTML5 </li>
-                            <li class="list-group-item"> CSS</li>
-                            <li class="list-group-item"> Javascript </li>
-                            <li class="list-group-item"> React </li>
-                            <li class="list-group-item"> Bootstrap </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-4 mb-4">
-                    <div class="card text-dark cardBG">
-                        <div class="card-header text-center lead">
-                            Back-end
-                        </div>
-                        <ul class="list-group">
-                            <li class="list-group-item">
-                                Node.js
-                            </li>
-                            <li class="list-group-item">
-                                Express
-                            </li>
-                            <li class="list-group-item">
-                                Mongoose
-                            </li>
-                            <li class="list-group-item">
-                                MongoDB
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-3 mb-4 ">
-                    <div class="card text-dark cardBG ">
-                        <div class="card-header text-center lead">
-                            Additional Skills
-                        </div>
-                        <ul class="list-group">
-                            <li class="list-group-item">Version control with Git + Github</li>
-                            <li class="list-group-item">Cloud-based hosting using Netlify, Heroku and Github Pages </li>
-                        </ul>
-                    </div>
                 </div>
             </div>
-        </section>
-    </div>
-    <footer class="bg-dark p-5 w-100 text-white d-flex justify-content-center align-items-center">
-        <div class="px-3">
+    </section>
+
+
+    <section id="section-skills">
+        <div class="skillsTitle">
+            <h1> <u> Skills</u> </h1>
+        </div>
+        <div class="skillsGenContainer">
+            <div class="skillsCatContainer">
+                <div class="skillsTitle">
+                    <h1>
+                        Front-end
+                    </h1>
+                </div>
+                <ul>
+                    <li>HTML5 </li>
+                    <li>CSS3</li>
+                    <li>Javascript </li>
+                    <li>React </li>
+                    <li>Bootstrap </li>
+                </ul>
+            </div>
+
+
+            <div class="skillsCatContainer">
+                <div class="skillsTitle">
+                    <h1>
+                        Back-end
+                    </h1>
+                </div>
+
+                <ul>
+                    <li>
+                        Node.js
+                    </li>
+                    <li>
+                        Express
+                    </li>
+                    <li>
+                        Mongoose
+                    </li>
+                    <li>
+                        MongoDB
+                    </li>
+                </ul>
+            </div>
+
+            <div class="skillsCatContainer">
+                <div class="skillsTitle">
+                    <h1>
+                        Additional
+                    </h1>
+                </div>
+                <ul>
+                    <li>Git + Github</li>
+                    <li>Cloud-based hosting using Netlify, Heroku and Github Pages </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div>
             <a href="https://github.com/mvangin/"> <img src="images/GitHubLogo.png" style="width:100px"> </a>
         </div>
-        <div class="px-3">
+        <div>
             Marcus van Ginkel
         </div>
-        <div class="px-3">
+        <div>
             <a href="https://www.linkedin.com/in/marcus-van-ginkel-8b3844133/"> <img src="images/linkedIn2.png"
                     style="width:100px" /> </a>
         </div>
@@ -441,12 +485,25 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js"
         integrity="sha512-HYG9E+RmbXS7oy529Nk8byKFw5jqM3R1zzvoV2JnltsIGkK/AhZSzciYCNxDMOXEbYO9w6MJ6SpuYgm5PJPpeQ=="
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-    <script type="text/javascript">
+
+    <script>
         $(function () {
             var scroll = SmoothScroll('a[href*="#section-"]')
         })
+        ScrollReveal({ distance: '500px', delay: 50, easing: 'ease-in-out'});
+
+        ScrollReveal().reveal('.aboutTitle img');
+        ScrollReveal().reveal('.aboutSummary');
+        ScrollReveal().reveal('.carousel-inner');
+        ScrollReveal().reveal('.skillsCatContainer');
+
+
+
     </script>
+
+
 </body>
 
 </html>
