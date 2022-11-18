@@ -39,8 +39,8 @@ body {
 }
 .navbarTop ul {
     display: flex;
-    justify-content: center;
-    margin: 0px;
+    justify-content: end;
+    margin: 0px 5rem;
     font-size: 1.3rem;
 }
 
@@ -70,24 +70,25 @@ section > div{
 #section-home {
     width: 100%;
     height: 100vh;
-    background: rgba(204, 72, 19, 0.959);
+    background: rgb(35 37 38);
 }
 
 #section-home .homeContainer {
-    text-align: center; 
     padding-top: 120px;
     color: white;
 }
 
-#section-home .homeContainer .homeMain h2 {
+#section-home .homeContainer .homeMain h1 {
     font-size: 2rem;
+    margin-bottom: 2rem;
 }
 
 #section-home .homeContainer .homeMain h2 {
-    animation: fadeIn ease 8s;
-    -webkit-animation: fadeIn ease 5s;
-    -moz-animation: fadeIn ease 5s;
+    font-size: 3rem;
+    margin-bottom: 1rem;
 }
+
+
 
 hr {
     width: 100%;
@@ -95,6 +96,9 @@ hr {
     box-sizing: border-box;
 }
 
+.homeContainer .btn {
+    font-size:1.3rem;
+}
 
 
 
@@ -117,6 +121,10 @@ hr {
 
 #section-home .homeContainer .homeSecondary h2:hover {
     transform: scale(.96);
+}
+
+.homeSecondary {
+    margin-top: 2rem;
 }
 
 
@@ -206,6 +214,10 @@ hr {
 
 /* Skills */ 
 
+.personal-projects-container{
+    background: rgb(35 37 38);
+}
+
 #section-skills .skillsTitle {
     text-align: center;
     padding-bottom: 1rem;
@@ -230,9 +242,10 @@ hr {
 
 
 #section-skills .skillsCatContainer .skillsTitle{   
-        background:#ffc107;
+        background:rgb(35 37 38);
         width: 100%;
         padding: 10px;
+        color:white;
 }
 
 #section-skills .skillsCatContainer .skillsTitle  h1 {
@@ -320,3 +333,36 @@ footer img:hover {
         flex-direction: column;
     }
 }
+
+
+.typed {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: typing 3s steps(40, end);
+  }
+  
+
+  .emphasize{
+    animation: colorchange 2s forwards;
+    animation-delay: 2s;
+  }
+
+
+  @-webkit-keyframes colorchange {
+    0% {
+      color: white;
+    }
+    
+    100% {
+      color: #67d5ff;
+    }
+}
+
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  

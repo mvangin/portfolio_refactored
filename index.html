@@ -34,6 +34,9 @@
             <li>
                 <a href="#section-skills"> Skills </a>
             </li>
+            <li>
+                <a href="pdf/resume.pdf" target="_blank"> Resume </a>
+            </li>
         </ul>
     </nav>
 
@@ -42,12 +45,21 @@
         <div class="homeContainer">
             <div class="homeMain">
                 <h1> My Name is Marcus van Ginkel. </h1>
-                <h2> A Web Developer </h2>
+                <div class="typed">
+                <h2 className="typed"> A <span class="emphasize"> Full Stack </span> Software Developer </h2>
+            </div>
             </div>
             <hr>
             <div class="homeSecondary">
-                <a href="#section-about">
-                    <h2> Learn more </h2>
+                <a href="#section-about" class="mr-5">
+                    <button class="btn btn-primary px-4 py-2" > 
+                        Learn More <span class="ml-2"> &#x2192; </span>
+                     </button>
+                </a>
+                <a href="pdf/resume.pdf" target="_blank"> 
+                    <button class="btn btn-primary px-4 py-2" > 
+                        Resume <image class="ml-2" src="images/linkIcon.svg" />
+                     </button>
                 </a>
             </div>
         </div>
@@ -66,23 +78,32 @@
             </div>
             <div class="aboutSummary">
                 <p>
-                    After obtaining a degree in Psychology from Carleton College in 2017 and working as a
-                    clinical research assistant for 2 years, I decided to pursue coding fulltime.
-                    I started my Web Development career by completing the online open-source Full-stack bootcamp
-                    called <a href="https://www.theodinproject.com/"> <u> The Odin
-                            Project.</u></a>
-                </p>
+                        I am continuously working on learning new skills by creating and improving web applications.
+                        See all my projects
+                        <a href="#section-projects"><u>here.</u> </a>
+                        I am also continuing to strive to follow CLEAN architecture and follow strong design patterns. 
+                        </p> 
+
+                            <p>
+                                I have been working at startups where I could make impactful contributions to help reach the company goals. 
+                                In my most recent position at MooveGuru I led standups, participated in weekly code presentations and worked collaboratively to 
+                            redesign and improve the Proptech platform. I also worked with individuals from 3rd party companies to integrate their 
+                            designs and API's into the MooveGuru web app. 
+                            
+                            <p>
+                            As a developer at FitSW I designed and built large full-stack features from scratch such as 
+                            allowing trainers to build custom questionnaires assignable to clients and building a robust custom scheduler for trainers to 
+                            create appointments with various clients in-app. 
+                        </p>
+                          </p> 
+                            My prior experience coordinating research studies at Johns Hopkins has also developed
+                            my ability to work well with others and collaboratively attain goals. 
+
+                </p> 
+
+               
 
                 <p>
-                    I am continuously working on learning new skills by creating and improving web applications. Most
-                    recently, I created a Full-stack MERN blog application. See all my projects
-                    <a href="#section-projects"><u>here.</u> </a>
-
-                </p>
-
-                <p>
-                    I am proficient in a multitude of languages and frameworks including HTML, CSS, Javascript, React,
-                    Redux, Node.js, Express, Mongoose, MongoDB and Bootstrap.
                     I am actively looking for web development opportunities, <a
                         href="https://www.linkedin.com/in/marcus-van-ginkel-8b3844133/" target="_blank"><u>lets
                             connect!</u> </a>
@@ -93,7 +114,7 @@
     </section>
 
 
-    <section id="section-projects" class="bg-dark">
+    <section id="section-projects" class="personal-projects-container">
         <div class="">
             <div class="text-center mb-5">
                 <h1 class="h1 text-light"> <u> Personal Projects</u> </h1>
@@ -356,8 +377,9 @@
                     <li>HTML5 </li>
                     <li>CSS3</li>
                     <li>Javascript </li>
-                    <li>React </li>
+                    <li>React/Redux </li>
                     <li>Bootstrap </li>
+                    <li>Tailwind </li>
                 </ul>
             </div>
 
@@ -378,24 +400,42 @@
                         Express
                     </li>
                     <li>
-                        Mongoose
+                        Mongoose/MongoDB
                     </li>
                     <li>
-                        MongoDB
+                        DynamoDB
+                    </li>
+                    <li>
+                        PHP
+                    </li>
+                    <li>
+                        MySQL
                     </li>
                 </ul>
             </div>
 
-            <div class="skillsCatContainer">
+            <div class="skillsCatContainer border-none">
                 <div class="skillsTitle">
                     <h1>
                         Additional
                     </h1>
                 </div>
-                <ul>
-                    <li>Git + Github</li>
+                
+                <div class="d-flex justify-content-around ">
+                <ul class="border rounded m-2">
+                    <li> Excellent communicator </li>
+                    <li> Flexible </li>
+                    <li> Quick-learner </li>
+                    <li> Dependable </li>
+                   
+                </ul>
+                <ul class="border rounded m-2">
+                    <li> AWS + CodePipeline </li>
+                    <li> Typescript </li>
+                    <li> Git + Github</li>
                     <li>Cloud-based hosting using Netlify, Heroku and Github Pages </li>
                 </ul>
+            </div>
             </div>
         </div>
     </section>
