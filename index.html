@@ -1,496 +1,651 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Bootstrap CSS -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+			integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+			crossorigin="anonymous"
+		/>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+		<link rel="stylesheet" href="main.css" />
 
-    <link rel="stylesheet" href="main.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+			rel="stylesheet"
+		/>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+		<title>Marcus van Ginkel</title>
+	</head>
 
-    <title>Marcus van Ginkel</title>
+	<body class="demo-item_inner">
+		<nav class="navbarTop">
+			<ul class="navbarList" id="navscroll-spy">
+				<li>
+					<a href="#section-about"> About </a>
+				</li>
+				<li>
+					<a href="#section-projects"> Projects </a>
+				</li>
+				<li>
+					<a href="#section-skills"> Skills </a>
+				</li>
+				<li>
+					<a href="pdf/resume.pdf" target="_blank"> Resume </a>
+				</li>
+			</ul>
+		</nav>
 
-</head>
+		<section id="section-home">
+			<div class="homeContainer">
+				<div class="homeMain">
+					<h1>My Name is Marcus van Ginkel.</h1>
+					<div class="typed">
+						<h2 className="typed">
+							A
+							<span class="emphasize"> Full Stack </span> Software
+							Developer
+						</h2>
+					</div>
+				</div>
+				<hr />
+				<div class="homeSecondary">
+					<a href="#section-about" class="mr-5">
+						<button class="btn btn-primary px-4 py-2 my-2">
+							Learn More <span class="ml-2"> &#x2192; </span>
+						</button>
+					</a>
+					<a href="pdf/resume.pdf" target="_blank">
+						<button class="btn btn-primary px-4 py-2 my-2">
+							Resume
+							<image class="ml-2" src="images/linkIcon.svg" />
+						</button>
+					</a>
+				</div>
+			</div>
+		</section>
 
+		<section id="section-about">
+			<div>
+				<h1>About Me</h1>
+				<hr />
+			</div>
+			<div class="aboutContainer">
+				<div class="aboutTitle">
+					<div>
+						<img src="images/profile.jpeg" id="profile" />
+					</div>
+				</div>
+				<div class="aboutSummary">
+					<p>
+						I am continuously working on learning new skills by
+						designing, creating, and improving web applications.
+					</p>
 
+					<p>
+						I have been working 2+ years as a full stack software
+						developer at startups where I could make impactful
+						contributions to help reach the company goals. I worked
+						to improve the propTech platform MooveGuru and helped
+						individual trainers and gyms build their own businesses
+						at FitSW Fitness Software.
+					</p>
 
-<body>
-    <nav class="navbarTop">
-        <ul class="navbarList" id="navscroll-spy">
+					<p></p>
 
-            <li>
-                <a href="#section-about"> About </a>
-            </li>
-            <li>
-                <a href="#section-projects"> Projects </a>
-            </li>
-            <li>
-                <a href="#section-skills"> Skills </a>
-            </li>
-            <li>
-                <a href="pdf/resume.pdf" target="_blank"> Resume </a>
-            </li>
-        </ul>
-    </nav>
+					<p>
+						My prior experience coordinating research studies at
+						Johns Hopkins has also developed my ability to work well
+						with others and collaboratively attain goals.
+					</p>
+					<p>
+						I am actively looking for web development opportunities!
+					</p>
+				</div>
+			</div>
+		</section>
 
+		<section id="section-projects" class="personal-projects-container">
+			<div class="">
+				<div class="ml-3 mb-5">
+					<h1 class="h1 text-light">Personal Projects</h1>
+					<hr />
+				</div>
 
-    <section id="section-home">
-        <div class="homeContainer">
-            <div class="homeMain">
-                <h1> My Name is Marcus van Ginkel. </h1>
-                <div class="typed">
-                <h2 className="typed"> A <span class="emphasize"> Full Stack </span> Software Developer </h2>
-            </div>
-            </div>
-            <hr>
-            <div class="homeSecondary">
-                <a href="#section-about" class="mr-5">
-                    <button class="btn btn-primary px-4 py-2" > 
-                        Learn More <span class="ml-2"> &#x2192; </span>
-                     </button>
-                </a>
-                <a href="pdf/resume.pdf" target="_blank"> 
-                    <button class="btn btn-primary px-4 py-2" > 
-                        Resume <image class="ml-2" src="images/linkIcon.svg" />
-                     </button>
-                </a>
-            </div>
-        </div>
-    </section>
+				<div
+					id="carousel-caption"
+					class="carousel slide"
+					data-ride="carousel"
+					data-interval="false"
+				>
+					<ol class="carousel-indicators d-flex">
+						<li
+							data-target="#carousel-caption"
+							data-slide-to="0"
+							class="active"
+						></li>
+						<li
+							data-target="#carousel-caption"
+							data-slide-to="1"
+						></li>
+						<li
+							data-target="#carousel-caption"
+							data-slide-to="2"
+						></li>
+						<li
+							data-target="#carousel-caption"
+							data-slide-to="3"
+						></li>
+					</ol>
+					<div class="carousel-inner text-dark">
+						<div class="carousel-item active">
+							<div class="row">
+								<div
+									class="col-12 col-md-6 d-flex align-items-center"
+								>
+									<img
+										src="images/ConflictContinuum.png"
+										class="w-100"
+										style="min-height: 300px"
+										alt="blog app"
+									/>
+								</div>
+								<div
+									class="col-12 col-md-5 d-flex align-items-center"
+								>
+									<div class="text-white">
+										<div
+											class="text-center project-title d-none d-md-block"
+										>
+											<b> The Conflict Continuum </b>
+										</div>
 
-    <section id="section-about">
-        <div class="aboutContainer">
+										<ul>
+											<li class="pt-2">
+												Fullstack Conflict Archeology
+												blog application with responsive
+												UI design using React, custom
+												CSS, and Bootstrap
+											</li>
+											<li class="pt-2">
+												Blog data organized and stored
+												on cloud database using
+												Mongoose/MongoDB, and
+												Node.js/Express
+											</li>
+											<li class="pt-2">
+												Administrator Frontend:
+												Signup/Login to manage, create,
+												and publish blogs as needed
+											</li>
+											<li class="pt-2">
+												Customer Frontend: Signup/login
+												to view, and add comments to
+												published posts. In-site contact
+												form (implemented using
+												Nodemailer)
+											</li>
+											<li class="pt-2">
+												Hosted and viewable on Netlify.
+												<a
+													class="text-white"
+													href="https://conflictcontinuum.netlify.app/"
+													target="_blank"
+												>
+													<u>Customer Portal.</u>
+													<br />
+												</a>
+												<a
+													class="text-white"
+													href="https://conflictcontinuum-admin.netlify.app/"
+													target="_blank"
+												>
+													<u>Administrator Portal.</u>
+													(Admin sign up password:
+													continuum)
+												</a>
+											</li>
+											<li class="pt-2">
+												Source code
+												<a
+													class="text-white"
+													href="https://github.com/mvangin/weatherApp"
+													target="_blank"
+												>
+													<u>here</u></a
+												>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
 
-            <div class="aboutTitle">
-                <div>
-                    <h1> About Me </u> </h1>
-                </div>
-                <div>
-                    <img src="images/profile.jpeg" id="profile">
-                </div>
-            </div>
-            <div class="aboutSummary">
-                <p>
-                        I am continuously working on learning new skills by creating and improving web applications.
-                        See all my projects
-                        <a href="#section-projects"><u>here.</u> </a>
-                        I am also continuing to strive to follow CLEAN architecture and follow strong design patterns. 
-                        </p> 
+							<div class="carousel-caption d-block">
+								<h5>Fullstack MERN Blog App</h5>
+								<p></p>
+								<div>
+									<a
+										class="carousel-control-prev"
+										href="#carousel-caption"
+										role="button"
+										data-slide="prev"
+									>
+										<span
+											class="carousel-control-prev-icon p-3"
+											aria-hidden="true"
+										></span>
+										<span class="sr-only">Previous</span>
+									</a>
+									<a
+										class="carousel-control-next"
+										href="#carousel-caption"
+										role="button"
+										data-slide="next"
+									>
+										<span
+											class="carousel-control-next-icon p-3"
+											aria-hidden="true"
+										></span>
+										<span class="sr-only">Next</span>
+									</a>
+								</div>
+							</div>
+						</div>
 
-                            <p>
-                                I have been working at startups where I could make impactful contributions to help reach the company goals. 
-                                In my most recent position at MooveGuru I led standups, participated in weekly code presentations and worked collaboratively to 
-                            redesign and improve the Proptech platform. I also worked with individuals from 3rd party companies to integrate their 
-                            designs and API's into the MooveGuru web app. 
-                            
-                            <p>
-                            As a developer at FitSW I designed and built large full-stack features from scratch such as 
-                            allowing trainers to build custom questionnaires assignable to clients and building a robust custom scheduler for trainers to 
-                            create appointments with various clients in-app. 
-                        </p>
-                          </p> 
-                            My prior experience coordinating research studies at Johns Hopkins has also developed
-                            my ability to work well with others and collaboratively attain goals. 
+						<div class="carousel-item">
+							<div class="row">
+								<div
+									class="col-12 col-md-6 d-flex align-items-center"
+								>
+									<img
+										src="images/weatherApp.png"
+										alt="weather app"
+										style="max-height: 350px"
+									/>
+								</div>
+								<div
+									class="col-12 col-md-5 d-flex align-items-center"
+								>
+									<div class="text-white">
+										<div
+											class="text-center project-title d-none d-md-block"
+										>
+											<b> Tennis Weather Forecast </b>
+										</div>
+										<ul>
+											<li class="pt-3">
+												Parses OpenWeatherMap API data
+												with pre-specified parameters to
+												create custom 7 day tennis
+												playability forecast
+											</li>
+											<li class="pt-3">
+												Technologies include React with
+												Hooks, Fetch, and custom CSS
+											</li>
+											<li class="pt-3">
+												Implemented responsive Design,
+												modular code, and HTTP error
+												handling
+											</li>
+											<li class="pt-2">
+												Hosted and viewable on
+												<a
+													class="text-white"
+													href="https://mvangin.github.io/weatherApp/"
+													target="_blank"
+												>
+													<u>Github Pages</u></a
+												>
+											</li>
+											<li class="pt-2">
+												Source code
+												<a
+													class="text-white"
+													href="https://github.com/mvangin/weatherApp"
+													target="_blank"
+												>
+													<u>here</u></a
+												>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
 
-                </p> 
+							<div class="carousel-caption">
+								<h5>Tennis Weather App</h5>
+								<p></p>
+								<div>
+									<a
+										class="carousel-control-prev"
+										href="#carousel-caption"
+										role="button"
+										data-slide="prev"
+									>
+										<span
+											class="carousel-control-prev-icon p-3"
+											aria-hidden="true"
+										></span>
+										<span class="sr-only">Previous</span>
+									</a>
+									<a
+										class="carousel-control-next"
+										href="#carousel-caption"
+										role="button"
+										data-slide="next"
+									>
+										<span
+											class="carousel-control-next-icon p-3"
+											aria-hidden="true"
+										></span>
+										<span class="sr-only">Next</span>
+									</a>
+								</div>
+							</div>
+						</div>
 
-               
+						<div class="carousel-item">
+							<div class="row">
+								<div
+									class="col-12 col-md-6 d-flex align-items-center"
+								>
+									<img
+										src="images/postcardBuilder.png"
+										class="w-100"
+										alt="postcard builder"
+									/>
+								</div>
+								<div
+									class="col-12 col-md-5 d-flex align-items-center"
+								>
+									<div class="text-white">
+										<div
+											class="text-center project-title d-none d-md-block"
+										>
+											<b> Postcard builder </b>
+										</div>
+										<ul>
+											<li class="pt-3">
+												Designed responsive layout using
+												HTML, custom CSS, and React
+											</li>
+											<li class="pt-3">
+												Users can upload, add, and
+												remove personal images that are
+												stored and organized using
+												Firebase.
+											</li>
+											<li class="pt-3">
+												Realtime character count
+												prevents text overflow.
+											</li>
+											<li class="pt-3">
+												Selectable array of
+												interchangeable stamp choices.
+											</li>
+											<li class="pt-2">
+												Hosted and viewable on
+												<a
+													target="_blank"
+													href="https://postcardbuilder.netlify.app/"
+													class="text-white"
+												>
+													<u>Netlify</u></a
+												>. Source code
+												<a
+													href="https://github.com/mvangin/Postcard-builder"
+													class="text-white"
+													target="_blank"
+												>
+													<u> here </u>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-caption d-block">
+								<h5>Postcard Builder</h5>
+								<p></p>
+								<div>
+									<a
+										class="carousel-control-prev"
+										href="#carousel-caption"
+										role="button"
+										data-slide="prev"
+									>
+										<span
+											class="carousel-control-prev-icon p-3"
+											aria-hidden="true"
+										></span>
+										<span class="sr-only">Previous</span>
+									</a>
+									<a
+										class="carousel-control-next"
+										href="#carousel-caption"
+										role="button"
+										data-slide="next"
+									>
+										<span
+											class="carousel-control-next-icon p-3"
+											aria-hidden="true"
+										></span>
+										<span class="sr-only">Next</span>
+									</a>
+								</div>
+							</div>
+						</div>
 
-                <p>
-                    I am actively looking for web development opportunities, <a
-                        href="https://www.linkedin.com/in/marcus-van-ginkel-8b3844133/" target="_blank"><u>lets
-                            connect!</u> </a>
-                </p>
+						<div class="carousel-item">
+							<div class="row">
+								<div
+									class="col-12 col-md-6 d-flex align-items-center"
+								>
+									<img
+										src="images/speed-typing-test.png"
+										alt="typing app"
+									/>
+								</div>
+								<div
+									class="col-12 col-md-5 d-flex align-items-center"
+								>
+									<div class="text-white">
+										<div
+											class="text-center project-title d-none d-md-block"
+										>
+											<b> Speed Typing Game </b>
+										</div>
+										<ul>
+											<li class="pt-2">
+												Created speed typing game using
+												HTML, CSS, Javascript, and React
+											</li>
+											<li class="pt-2">
+												Includes adjustable countdown
+												timer, realtime words per
+												minute, and a final accuracy
+												score
+											</li>
+											<li class="pt-2">
+												Content refresh without
+												reloading
+											</li>
+											<li class="pt-2">
+												Hosted and viewable on
+												<a
+													class="text-white"
+													href="https://mvangin.github.io/speedTyping-React/"
+													target="_blank"
+												>
+													<u>Github pages</u>
+												</a>
+											</li>
+											<li class="pt-2">
+												Source code
+												<a
+													class="text-white"
+													href="https://github.com/mvangin/speedTyping-React"
+													target="_blank"
+												>
+													<u> here</u>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
 
-            </div>
-        </div>
-    </section>
+							<div class="carousel-caption d-block">
+								<h5>Speed Typing App</h5>
+								<p></p>
+								<div>
+									<a
+										class="carousel-control-prev"
+										href="#carousel-caption"
+										role="button"
+										data-slide="prev"
+									>
+										<span
+											class="carousel-control-prev-icon p-3"
+											aria-hidden="true"
+										></span>
+										<span class="sr-only">Previous</span>
+									</a>
+									<a
+										class="carousel-control-next"
+										href="#carousel-caption"
+										role="button"
+										data-slide="next"
+									>
+										<span
+											class="carousel-control-next-icon p-3"
+											aria-hidden="true"
+										></span>
+										<span class="sr-only">Next</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
+		<section id="section-skills">
+			<div class="skillsTitle">
+				<h1>Skills</h1>
+				<hr />
+			</div>
+			<div class="skillsGenContainer">
+				<div class="skillsCatContainer">
+					<div class="skillsTitle">
+						<h1>Front-end</h1>
+					</div>
+					<ul>
+						<li>HTML5</li>
+						<li>CSS3</li>
+						<li>Javascript</li>
+						<li>React/Redux</li>
+						<li>Bootstrap</li>
+						<li>Tailwind</li>
+					</ul>
+				</div>
 
-    <section id="section-projects" class="personal-projects-container">
-        <div class="">
-            <div class="text-center mb-5">
-                <h1 class="h1 text-light"> <u> Personal Projects</u> </h1>
-            </div>
+				<div class="skillsCatContainer">
+					<div class="skillsTitle">
+						<h1>Back-end</h1>
+					</div>
 
-            <div id="carousel-caption" class="carousel slide" data-ride="carousel" data-interval="false">
-                <ol class="carousel-indicators d-flex">
-                    <li data-target="#carousel-caption" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-caption" data-slide-to="1"></li>
-                    <li data-target="#carousel-caption" data-slide-to="2"></li>
-                    <li data-target="#carousel-caption" data-slide-to="3"></li>
-                </ol>
-                <div class="carousel-inner text-dark">
-                    <div class="carousel-item active">
-                        <div class="row">
-                            <div class="col-12 col-md-6 d-flex align-items-center">
-                                <img src="images/ConflictContinuum.png" class="w-100" style="min-height: 300px"
-                                    alt="blog app">
-                            </div>
-                            <div class="col-12 col-md-5 d-flex align-items-center ">
-                                <div class="text-white">
-                                    <div class="text-center project-title  d-none d-md-block">
-                                        <b> The Conflict Continuum </b>
-                                    </div>
+					<ul>
+						<li>Node.js/Express</li>
+						<li>Mongoose/MongoDB</li>
+						<li>AWS + CodePipeline + CodeCommit</li>
+						<li>PHP</li>
+						<li>MySQL</li>
+						<li>Git + Github</li>
+					</ul>
+				</div>
 
-                                    <ul>
-                                        <li class="pt-2">
-                                            Fullstack Conflict Archeology blog application with responsive UI design using React, custom
-                                            CSS, and Bootstrap
+				<div class="skillsCatContainer border-none">
+					<div class="skillsTitle">
+						<h1>Additional</h1>
+					</div>
 
-                                        </li>
-                                        <li class="pt-2">
-                                            Blog data organized and stored on cloud database using Mongoose/MongoDB,
-                                            and Node.js/Express
-                                        </li>
-                                        <li class="pt-2">
-                                            Administrator Frontend: Signup/Login to manage, create, and
-                                            publish blogs as needed
-                                        </li>
-                                        <li class="pt-2">
-                                            Customer Frontend: Signup/login to view, and add comments
-                                            to published posts. In-site contact form (implemented using Nodemailer)
-                                        </li>
-                                        <li class="pt-2">
-                                            Hosted and viewable on Netlify. <a class="text-white"
-                                                href="https://conflictcontinuum.netlify.app/" target="_blank">
-                                                <u>Customer Portal.</u> <br> </a>
-                                            <a class="text-white" href="https://conflictcontinuum-admin.netlify.app/"
-                                                target="_blank">
-                                                <u>Administrator Portal.</u> (Admin sign up password: continuum) </a>
-                                        </li>
-                                        <li class="pt-2">
-                                            Source code <a class="text-white"
-                                                href="https://github.com/mvangin/weatherApp" target="_blank">
-                                                <u>here</u></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+					<ul>
+						<li>Typescript</li>
+						<li>Excellent communicator</li>
+						<li>Flexible</li>
+						<li>Quick-learner</li>
+						<li>Dependable</li>
+					</ul>
+				</div>
+			</div>
+		</section>
 
-                        <div class="carousel-caption d-block">
-                            <h5>Fullstack MERN Blog App</h5>
-                            <p> </p>
-                            <div>
-                                <a class="carousel-control-prev" href="#carousel-caption" role="button"
-                                    data-slide="prev">
-                                    <span class="carousel-control-prev-icon p-3" aria-hidden="true"></span>
-                                    <span class="sr-only">Previous</span>
-                                </a>
-                                <a class="carousel-control-next " href="#carousel-caption" role="button"
-                                    data-slide="next">
-                                    <span class="carousel-control-next-icon p-3" aria-hidden="true"></span>
-                                    <span class="sr-only">Next</span>
-                                </a>
-                            </div>
+		<footer>
+			<div>
+				<a href="https://github.com/mvangin/">
+					<img src="images/GitHubLogo.png" style="width: 100px" />
+				</a>
+			</div>
+			<div>Marcus van Ginkel</div>
+			<div>
+				<a
+					href="https://www.linkedin.com/in/marcus-van-ginkel-8b3844133/"
+				>
+					<img src="images/linkedIn2.png" style="width: 100px" />
+				</a>
+			</div>
+		</footer>
 
-                        </div>
-                    </div>
+		<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+		<script
+			src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js"
+			integrity="sha512-HYG9E+RmbXS7oy529Nk8byKFw5jqM3R1zzvoV2JnltsIGkK/AhZSzciYCNxDMOXEbYO9w6MJ6SpuYgm5PJPpeQ=="
+			crossorigin="anonymous"
+		></script>
+		<script src="https://unpkg.com/scrollreveal"></script>
 
+		<script>
+			$(function () {
+				var scroll = SmoothScroll('a[href*="#section-"]');
+			});
 
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-12 col-md-6 d-flex align-items-center">
-                                <img src="images/weatherApp.png" alt="weather app" style="max-height: 350px">
-                            </div>
-                            <div class="col-12 col-md-5 d-flex align-items-center">
-                                <div class="text-white">
-                                    <div class="text-center project-title d-none d-md-block">
-                                        <b> Tennis Weather Forecast </b>
-                                    </div>
-                                    <ul>
-                                        <li class="pt-3">
-                                            Parses OpenWeatherMap API data with pre-specified parameters to create custom 7 day tennis playability forecast
-                                        </li>
-                                        <li class="pt-3">
-                                              Technologies include React with Hooks, Fetch, and custom CSS
-                                        </li>
-                                        <li class="pt-3">
-                                            Implemented responsive Design, modular code, and HTTP error handling
-                                        </li>
-                                        <li class="pt-2">
-                                            Hosted and viewable on <a class="text-white"
-                                                href="https://mvangin.github.io/weatherApp/" target="_blank"> <u>Github
-                                                    Pages</u></a>
-                                        </li>
-                                        <li class="pt-2">
-                                            Source code <a class="text-white"
-                                                href="https://github.com/mvangin/weatherApp" target="_blank">
-                                                <u>here</u></a>
-                                        </li>
-                                </div>
-                            </div>
-                        </div>
+			ScrollReveal({
+				distance: '500px',
+				delay: 50,
+				easing: 'ease-in-out',
+			});
 
-                        <div class="carousel-caption ">
-                            <h5>Tennis Weather App</h5>
-                            <p> </p>
-                            <div>
-                                <a class="carousel-control-prev" href="#carousel-caption" role="button"
-                                    data-slide="prev">
-                                    <span class="carousel-control-prev-icon p-3" aria-hidden="true"></span>
-                                    <span class="sr-only">Previous</span>
-                                </a>
-                                <a class="carousel-control-next " href="#carousel-caption" role="button"
-                                    data-slide="next">
-                                    <span class="carousel-control-next-icon p-3" aria-hidden="true"></span>
-                                    <span class="sr-only">Next</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-12 col-md-6 d-flex align-items-center">
-                                <img src="images/postcardBuilder.png" class="w-100" alt="postcard builder">
-                            </div>
-                            <div class="col-12 col-md-5 d-flex align-items-center">
-                                <div class="text-white">
-                                    <div class="text-center project-title  d-none d-md-block">
-                                        <b> Postcard builder </b>
-                                    </div>
-                                    <ul>
-                                        <li class="pt-3">
-                                            Designed responsive layout using HTML, custom CSS, and React
-                                        </li>
-                                        <li class="pt-3">
-                                            Users can upload, add, and remove personal images that are stored and organized
-                                            using Firebase.
-                                        </li>
-                                        <li class="pt-3">
-                                            Realtime character count prevents text overflow.
-                                        </li>
-                                        <li class="pt-3">
-                                            Selectable array of interchangeable stamp choices.
-                                        </li>
-                                        <li class="pt-2">
-                                            Hosted and viewable on <a target="_blank"
-                                                href="https://postcardbuilder.netlify.app/" class="text-white"> 
-                                                <u>Netlify</u></a>. Source code <a
-                                                href="https://github.com/mvangin/Postcard-builder"
-                                                class="text-white" target="_blank"> <u> here </u> </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-caption d-block">
-                            <h5>Postcard Builder</h5>
-                            <p> </p>
-                            <div>
-                                <a class="carousel-control-prev" href="#carousel-caption" role="button"
-                                    data-slide="prev">
-                                    <span class="carousel-control-prev-icon p-3" aria-hidden="true"></span>
-                                    <span class="sr-only">Previous</span>
-                                </a>
-                                <a class="carousel-control-next " href="#carousel-caption" role="button"
-                                    data-slide="next">
-                                    <span class="carousel-control-next-icon p-3" aria-hidden="true"></span>
-                                    <span class="sr-only">Next</span>
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-12 col-md-6 d-flex align-items-center">
-                                <img src="images/speed-typing-test.png" alt="typing app">
-                            </div>
-                            <div class="col-12 col-md-5 d-flex align-items-center ">
-                                <div class="text-white">
-                                    <div class="text-center project-title  d-none d-md-block">
-                                        <b> Speed Typing Game </b>
-                                    </div>
-                                    <ul>
-                                        <li class="pt-2">
-                                            Created speed typing game using HTML, CSS, Javascript, and React
-                                        </li>
-                                        <li class="pt-2">
-                                            Includes adjustable countdown timer, realtime words per minute, and a final
-                                            accuracy score
-                                        </li>
-                                        <li class="pt-2">
-                                            Content refresh without reloading
-                                        </li>
-                                        <li class="pt-2">
-                                            Hosted and viewable on <a class="text-white"
-                                                href="https://mvangin.github.io/speedTyping-React/" target="_blank">
-                                                <u>Github
-                                                    pages</u>
-                                        </li>
-                                        <li class="pt-2">
-                                            </a> Source code <a class="text-white"
-                                                href="https://github.com/mvangin/speedTyping-React" target="_blank"> <u>
-                                                    here</u> </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="carousel-caption d-block">
-                            <h5>Speed Typing App</h5>
-                            <p> </p>
-                            <div>
-                                <a class="carousel-control-prev" href="#carousel-caption" role="button"
-                                    data-slide="prev">
-                                    <span class="carousel-control-prev-icon p-3" aria-hidden="true"></span>
-                                    <span class="sr-only">Previous</span>
-                                </a>
-                                <a class="carousel-control-next " href="#carousel-caption" role="button"
-                                    data-slide="next">
-                                    <span class="carousel-control-next-icon p-3" aria-hidden="true"></span>
-                                    <span class="sr-only">Next</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </section>
-
-
-    <section id="section-skills">
-        <div class="skillsTitle">
-            <h1> <u> Skills</u> </h1>
-        </div>
-        <div class="skillsGenContainer">
-            <div class="skillsCatContainer">
-                <div class="skillsTitle">
-                    <h1>
-                        Front-end
-                    </h1>
-                </div>
-                <ul>
-                    <li>HTML5 </li>
-                    <li>CSS3</li>
-                    <li>Javascript </li>
-                    <li>React/Redux </li>
-                    <li>Bootstrap </li>
-                    <li>Tailwind </li>
-                </ul>
-            </div>
-
-
-
-            <div class="skillsCatContainer">
-                <div class="skillsTitle">
-                    <h1>
-                        Back-end
-                    </h1>
-                </div>
-
-                <ul>
-                    <li>
-                        Node.js
-                    </li>
-                    <li>
-                        Express
-                    </li>
-                    <li>
-                        Mongoose/MongoDB
-                    </li>
-                    <li>
-                        DynamoDB
-                    </li>
-                    <li>
-                        PHP
-                    </li>
-                    <li>
-                        MySQL
-                    </li>
-                </ul>
-            </div>
-
-            <div class="skillsCatContainer border-none">
-                <div class="skillsTitle">
-                    <h1>
-                        Additional
-                    </h1>
-                </div>
-                
-                <div class="d-flex justify-content-around ">
-                <ul class="border rounded m-2">
-                    <li> Excellent communicator </li>
-                    <li> Flexible </li>
-                    <li> Quick-learner </li>
-                    <li> Dependable </li>
-                   
-                </ul>
-                <ul class="border rounded m-2">
-                    <li> AWS + CodePipeline </li>
-                    <li> Typescript </li>
-                    <li> Git + Github</li>
-                    <li>Cloud-based hosting using Netlify, Heroku and Github Pages </li>
-                </ul>
-            </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div>
-            <a href="https://github.com/mvangin/"> <img src="images/GitHubLogo.png" style="width:100px"> </a>
-        </div>
-        <div>
-            Marcus van Ginkel
-        </div>
-        <div>
-            <a href="https://www.linkedin.com/in/marcus-van-ginkel-8b3844133/"> <img src="images/linkedIn2.png"
-                    style="width:100px" /> </a>
-        </div>
-    </footer>
-
-
-
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js"
-        integrity="sha512-HYG9E+RmbXS7oy529Nk8byKFw5jqM3R1zzvoV2JnltsIGkK/AhZSzciYCNxDMOXEbYO9w6MJ6SpuYgm5PJPpeQ=="
-        crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-
-    <script>
-        $(function () {
-            var scroll = SmoothScroll('a[href*="#section-"]')
-        })
-
-
-        ScrollReveal({ distance: '500px', delay: 50, easing: 'ease-in-out' });
-
-        ScrollReveal().reveal('.aboutTitle img');
-        ScrollReveal().reveal('.aboutSummary');
-        ScrollReveal().reveal('.carousel-inner');
-        ScrollReveal().reveal('.skillsCatContainer');
-
-
-
-
-
-    </script>
-
-
-</body>
-
+			ScrollReveal().reveal('.aboutTitle img');
+			ScrollReveal().reveal('.aboutSummary');
+			ScrollReveal().reveal('.carousel-inner');
+			ScrollReveal().reveal('.skillsCatContainer');
+		</script>
+	</body>
 </html>
