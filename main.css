@@ -317,7 +317,7 @@ footer img:hover {
 
 .emphasize {
 	animation: colorchange 2s forwards;
-	animation-delay: 1.8s;
+	animation-delay: 2.2s;
 }
 
 @-webkit-keyframes colorchange {
